@@ -66,20 +66,4 @@ ENDM
 	map_const HALL_OF_FAME,                                 5,  7 ;  7
 	endgroup
 
-	newgroup DUNGEONS 	                                          ;  5
-	endgroup
-
-	newgroup PALLET 	                                          ;  6
-	endgroup
-
-	newgroup VIRIDIAN 	                                          ;  7
-	endgroup
-
-	newgroup PEWTER 	                                          ;  8
-	endgroup
-
-	newgroup CERULEAN 	                                          ;  9
-	endgroup
-
-
 NUM_MAP_GROUPS EQU const_value ; 9
