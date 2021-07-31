@@ -21,6 +21,9 @@ MapGroupPointers::
 	dw MapGroup_BattleTower   ;  2
 	dw MapGroup_NewBark       ;  3
 	dw MapGroup_Indigo        ;  4
+	dw MapGroup_Dungeons	  ;	 5
+	dw MapGroup_Pallet		  ;  6
+;	dw MapGroup_Viridian	  ;  7	
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_CableClub:
