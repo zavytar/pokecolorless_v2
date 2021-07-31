@@ -77,6 +77,7 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_INDIGO
 	engine_flag wVisitedSpawns, SPAWN_NEW_BARK
 	engine_flag wVisitedSpawns, SPAWN_BATTLE_TOWER
+	engine_flag wVisitedSpawns, SPAWN_PALLET
 
 	engine_flag wLuckyNumberShowFlag, LUCKYNUMBERSHOW_GAME_OVER_F
 

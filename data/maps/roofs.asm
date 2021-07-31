@@ -16,6 +16,8 @@ MapGroupRoofs:
 	db ROOF_OLIVINE   ;  2 (Battle Tower)
 	db ROOF_NEW_BARK  ;  3 (New Bark)
 	db -1             ;  4
+;	db -1			  ;	 5 (Dungeons)
+	db -1			  ;  6 (Pallet)
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

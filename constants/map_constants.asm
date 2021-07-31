@@ -66,8 +66,8 @@ ENDM
 	map_const HALL_OF_FAME,                                 5,  7 ;  7
 	endgroup
 
-	newgroup DUNGEONS											  ;	 5
-	endgroup
+;	newgroup DUNGEONS											  ;	 5
+;	endgroup
 
 	newgroup PALLET												  ;	 6
 	map_const OAKS_LAB,             		                5,  6 ;  1

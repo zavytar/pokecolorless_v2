@@ -1,7 +1,7 @@
 	object_const_def ; object_event constants
 	const BLUESHOUSE_DAISY
 
-BluesHouse_MapScripts:
+BluesHouse1F_MapScripts:
 	db 0 ; scene scripts
 ;	scene_script .DaisyTM27Scene	; SCENE_BLUESHOUSE_DAISY_TM27
 ;	scene_script .PokegearScene		; SCENE_BLUESHOUSE_DAISY_POKEGEAR
@@ -292,7 +292,7 @@ DaisyCantGroomEggText:
 	cont "groom an EGG."
 	done
 
-BluesHouse_MapEvents:
+BluesHouse1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events

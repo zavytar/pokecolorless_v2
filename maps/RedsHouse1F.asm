@@ -21,8 +21,8 @@ RedsMom:
 RedsHouse1FTV:
 	jumptext RedsHouse1FTVText
 
-RedsHouse1FBookshelf:
-	jumpstd picturebookshelf
+;RedsHouse1FBookshelf:
+;	jumpstd picturebookshelf
 
 RedsMomText1:
 	text "Hi, <PLAYER>!"
@@ -68,9 +68,9 @@ RedsHouse1F_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
-	bg_event  0,  1, BGEVENT_READ, RedsHouse1FBookshelf
-	bg_event  1,  1, BGEVENT_READ, RedsHouse1FBookshelf
+	db 1 ; bg events
+;	bg_event  0,  1, BGEVENT_READ, RedsHouse1FBookshelf
+;	bg_event  1,  1, BGEVENT_READ, RedsHouse1FBookshelf
 	bg_event  2,  1, BGEVENT_READ, RedsHouse1FTV
 
 	db 1 ; object events
