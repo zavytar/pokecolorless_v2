@@ -59,9 +59,11 @@ MapGroup_Indigo:
 	assert_table_length NUM_INDIGO_MAPS
 
 MapGroup_Dungeons:
+	table_width MAP_LENGTH, MapGroup_Dungeons
 	assert_table_length NUM_DUNGEON_MAPS
 
 MapGroup_Pallet:
+	table_width MAP_LENGTH, MapGroup_Pallet
 	map OaksLab, TILESET_LAB, INDOOR, LANDMARK_BATTLE_TOWER, MUSIC_BATTLE_TOWER_LOBBY, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map RedsHouse1F, TILESET_HOUSE, INDOOR, LANDMARK_BATTLE_TOWER, MUSIC_BATTLE_TOWER_LOBBY, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map RedsHouse2F, TILESET_HOUSE, INDOOR, LANDMARK_BATTLE_TOWER, MUSIC_BATTLE_TOWER_LOBBY, FALSE, PALETTE_DAY, FISHGROUP_SHORE
@@ -70,4 +72,5 @@ MapGroup_Pallet:
 	assert_table_length NUM_PALLET_MAPS
 
 ;MapGroup_Viridian:
+;	table_width MAP_LENGTH, MapGroup_Viridian
 ;	assert_table_length NUM_VIRIDIAN_MAPS
