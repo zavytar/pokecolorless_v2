@@ -21,7 +21,7 @@ MapGroupPointers::
 	dw MapGroup_BattleTower   ;  2
 	dw MapGroup_NewBark       ;  3
 	dw MapGroup_Indigo        ;  4
-	dw MapGroup_Dungeons	  ;	 5
+;	dw MapGroup_Dungeons	  ;	 5
 	dw MapGroup_Pallet		  ;  6
 ;	dw MapGroup_Viridian	  ;  7	
 	assert_table_length NUM_MAP_GROUPS
@@ -61,9 +61,9 @@ MapGroup_Indigo:
 	map HallOfFame, TILESET_ICE_PATH, INDOOR, LANDMARK_INDIGO_PLATEAU, MUSIC_NEW_BARK_TOWN, TRUE, PALETTE_DAY, FISHGROUP_SHORE
 	assert_table_length NUM_INDIGO_MAPS
 
-MapGroup_Dungeons:
-	table_width MAP_LENGTH, MapGroup_Dungeons
-	assert_table_length NUM_DUNGEON_MAPS
+;MapGroup_Dungeons:
+;	table_width MAP_LENGTH, MapGroup_Dungeons
+;	assert_table_length NUM_DUNGEON_MAPS
 
 MapGroup_Pallet:
 	table_width MAP_LENGTH, MapGroup_Pallet
