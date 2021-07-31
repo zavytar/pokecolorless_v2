@@ -72,7 +72,7 @@ ENDM
 	newgroup PALLET												  ;	 6
 	map_const OAKS_LAB,             		                5,  6 ;  1
 	map_const REDS_HOUSE_1F,                           	    4,  4 ;  2
-	map_const REDS_HOUSE_1F,                             	4,  4 ;  3
+	map_const REDS_HOUSE_2F,                             	4,  4 ;  3
 	map_const BLUES_HOUSE_1F,                             	4,  4 ;  4
 	map_const PALLET_TOWN,									10, 9 ;	 5
 	endgroup
