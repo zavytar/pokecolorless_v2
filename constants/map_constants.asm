@@ -66,4 +66,15 @@ ENDM
 	map_const HALL_OF_FAME,                                 5,  7 ;  7
 	endgroup
 
+	newgroup DUNGEONS											  ;	 5
+	endgroup
+
+	newgroup PALLET												  ;	 6
+	map_const OAKS_LAB,             		                5,  6 ;  1
+	map_const REDS_HOUSE_1F,                           	    4,  4 ;  2
+	map_const REDS_HOUSE_1F,                             	4,  4 ;  3
+	map_const BLUES_HOUSE_1F,                             	4,  4 ;  4
+	map_const PALLET_TOWN,									10, 9 ;	 5
+	endgroup
+
 NUM_MAP_GROUPS EQU const_value ; 9

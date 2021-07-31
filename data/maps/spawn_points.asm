@@ -8,9 +8,10 @@ SpawnPoints:
 ; entries correspond to SPAWN_* constants
 	table_width 4, SpawnPoints
 
-	spawn PLAYERS_HOUSE_2F,              3,  3
+	spawn OAKS_LAB,			             3,  3
 ; kanto
 	spawn INDIGO_PLATEAU_POKECENTER_1F,  7,  9
+	spawn PALLET_TOWN,					 5,  5
 ; johto
 	spawn NEW_BARK_TOWN,                15,  8
 	spawn BATTLE_TOWER_OUTSIDE,          8, 10

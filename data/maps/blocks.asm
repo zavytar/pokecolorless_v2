@@ -37,6 +37,21 @@ PlayersHouse1F_Blocks:
 PlayersHouse2F_Blocks:
 	INCBIN "maps/PlayersHouse2F.blk"
 
+OaksLab_Blocks:
+	INCBIN "maps/OaksLab.blk"
+
+RedsHouse1F_Blocks:
+	INCBIN "maps/RedsHouse1F.blk"
+
+RedsHouse2F_Blocks:
+	INCBIN "maps/RedsHouse2F.blk"
+
+BluesHouse1F_Blocks:
+	INCBIN "maps/BluesHouse1F.blk"
+
+PalletTown_Blocks:
+	INCBIN "maps/PalletTown.blk"
+
 
 SECTION "Map Blocks 3", ROMX
 

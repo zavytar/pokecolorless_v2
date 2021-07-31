@@ -119,3 +119,10 @@ ENDM
 	map_attributes KarensRoom, KARENS_ROOM, $00, 0
 	map_attributes LancesRoom, LANCES_ROOM, $00, 0
 	map_attributes HallOfFame, HALL_OF_FAME, $00, 0
+
+	map_attributes OaksLab, OAKS_LAB, $00, 0
+	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
+	map_attributes RedsHouse2F, REDS_HOUSE_2F, $00, 0
+	map_attributes BluesHouse1F, BLUES_HOUSE_1F, $00, 0
+	map_attributes PalletTown, PALLET_TOWN, $00, 0
+

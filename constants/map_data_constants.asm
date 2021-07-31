@@ -75,6 +75,10 @@ NUM_FISHGROUPS EQU const_value - 1
 	const SPAWN_HOME
 ; kanto
 	const SPAWN_INDIGO
+	const SPAWN_PALLET
+;	const SPAWN_VIRIDIAN
+;	const SPAWN_PEWTER
+;	const SPAWN_CERULEAN
 ; johto
 	const SPAWN_NEW_BARK
 	const SPAWN_BATTLE_TOWER
