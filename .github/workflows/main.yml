@@ -38,7 +38,7 @@ jobs:
           fi
 
       - name: Discord webhook
-        if: ${{ github.event_name == 'push' && github.repository_owner == 'pret' }}
+        if: ${{ github.event_name == 'push' && github.repository_owner == 'zavytar' }}
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
