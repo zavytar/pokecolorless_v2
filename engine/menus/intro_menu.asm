@@ -63,7 +63,7 @@ NewGame:
 	ld [wDebugFlags], a
 	call ResetWRAM
 	call NewGame_ClearTilemapEtc
-	call AreYouABoyOrAreYouAGirl
+;	call AreYouABoyOrAreYouAGirl
 	call OakSpeech
 	call InitializeWorld
 
@@ -657,7 +657,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	call ClearTilemap
 
-	ld a, WOOPER
+	ld a, Nidorino
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetBaseData
@@ -708,6 +708,11 @@ OakSpeech:
 	call NamePlayer
 	ld hl, OakText7
 	call PrintText
+	ld hl, OakText8 
+	call PrintText
+	call NameRival
+	ld hl, OakText9
+	call PrintText	
 	ret
 
 OakText1:
@@ -717,7 +722,7 @@ OakText1:
 OakText2:
 	text_far _OakText2
 	text_asm
-	ld a, WOOPER
+	ld a, NIDORINO
 	call PlayMonCry
 	call WaitSFX
 	ld hl, OakText3
@@ -741,6 +746,14 @@ OakText6:
 
 OakText7:
 	text_far _OakText7
+	text_end
+
+OakText8:
+	text_far _OakText8
+	text_end
+
+OakText9:
+	text_far _OakText9
 	text_end
 
 NamePlayer:
