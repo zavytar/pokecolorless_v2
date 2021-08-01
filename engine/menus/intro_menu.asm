@@ -657,7 +657,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	call ClearTilemap
 
-	ld a, Nidorino
+	ld a, NIDORINO
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetBaseData
@@ -708,11 +708,36 @@ OakSpeech:
 	call NamePlayer
 	ld hl, OakText7
 	call PrintText
+	call ClearTilemap
+
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, RIVAL1
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call Intro_RotatePalettesLeftFrontpic
+
 	ld hl, OakText8 
 	call PrintText
-	call NameRival
+	call NameRivalIntro
+
 	ld hl, OakText9
-	call PrintText	
+	call PrintText
+	call ClearTilemap
+
+	xor a
+	ld [wCurPartySpecies], a
+	farcall DrawIntroPlayerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call Intro_RotatePalettesLeftFrontpic	
+
+	ld hl, OakText10
+	call PrintText
 	ret
 
 OakText1:
@@ -756,6 +781,39 @@ OakText9:
 	text_far _OakText9
 	text_end
 
+OakText10:
+	text_far _OakText10
+	text_end
+
+NameRivalIntro:
+	ld b, NAME_RIVAL
+	ld de, wRivalName
+	farcall _NamingScreen
+
+	call ClearTilemap
+	call LoadFontsExtra
+	call WaitBGMap
+
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, RIVAL1
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call Intro_RotatePalettesLeftFrontpic
+
+	ld hl, wRivalName
+	ld de, .DefaultName
+
+	call InitName
+	ret
+
+.DefaultName:
+	db "RED@"
+	ret
+
 NamePlayer:
 	farcall MovePlayerPicRight
 	farcall ShowPlayerNamingChoices
@@ -797,7 +855,7 @@ NamePlayer:
 	ret
 
 .Chris:
-	db "CHRIS@@@@@@"
+	db "BLUE@@@@@@@"
 .Kris:
 	db "KRIS@@@@@@@"
 

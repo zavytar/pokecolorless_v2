@@ -1,7 +1,9 @@
 _OakText6::
 	text "Now, you're my"
-	line "grandson. Please,"
-	cont "introduce yourself."
+	line "grandson."
+	
+	para "Please, intro-"
+	line "duce yourself."
 	prompt
 
 _OakText7::
@@ -10,7 +12,7 @@ _OakText7::
 	prompt
 
 _OakText8::
-	para "OAK: Now, today"
+	text "OAK: Now, today"
 	line "I'll give a"
 	cont "#MON to you"
 	cont "and your friend."
@@ -26,12 +28,27 @@ _OakText9::
 	para "His name is"
 	line "<RIVAL>!"
 	
-	para "Anyway, <PLAYER>,"
+_OakText10::	
+	text "Anyway, <PLAYER>,"
 	line "are you ready?"
 
 	para "Your very own"
 	line "#MON story is"
 	cont "about to unfold."
+	
+	para "You'll face fun"
+	line "times and tough"
+	cont "challenges."
+
+	para "A world of dreams"
+	line "and adventures"
+
+	para "with #MON"
+	line "awaits! Let's go!"
+
+	para "Swing by the LAB"
+	line "to get your very"
+	cont "first #MON!"
 	done
 
 _ClockTimeMayBeWrongText::
