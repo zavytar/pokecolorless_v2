@@ -469,7 +469,6 @@ WooperFrontpic:      INCBIN "gfx/pokemon/wooper/front.animated.2bpp.lz"
 ClefairyBackpic:     INCBIN "gfx/pokemon/clefairy/back.2bpp.lz"
 VenonatBackpic:      INCBIN "gfx/pokemon/venonat/back.2bpp.lz"
 BellossomBackpic:    INCBIN "gfx/pokemon/bellossom/back.2bpp.lz"
-Rival1Pic:           INCBIN "gfx/trainers/rival1.2bpp.lz"
 SwinubBackpic:       INCBIN "gfx/pokemon/swinub/back.2bpp.lz"
 
 
@@ -716,7 +715,7 @@ SECTION "Pics 19", ROMX
 
 ; Seems to be an accidental copy of the previous bank
 
-INCBIN "gfx/pokemon/spinarak/back.2bpp.lz"
+Rival1Pic:           INCBIN "gfx/trainers/rival1.2bpp.lz"
 INCBIN "gfx/pokemon/raikou/back.2bpp.lz"
 INCBIN "gfx/pokemon/unown_k/front.animated.2bpp.lz"
 INCBIN "gfx/pokemon/houndour/back.2bpp.lz"
