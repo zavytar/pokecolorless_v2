@@ -27,6 +27,7 @@ _OakText9::
 
 	para "His name is"
 	line "<RIVAL>!"
+	prompt 
 	
 _OakText10::	
 	text "Anyway, <PLAYER>,"

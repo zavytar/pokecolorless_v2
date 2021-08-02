@@ -788,9 +788,11 @@ OakText10:
 NameRivalIntro:
 	ld b, NAME_RIVAL
 	ld de, wRivalName
-	farcall _NamingScreen
+	farcall NamingScreen
 
+	call RotateThreePalettesRight
 	call ClearTilemap
+
 	call LoadFontsExtra
 	call WaitBGMap
 
@@ -802,17 +804,18 @@ NameRivalIntro:
 
 	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
 	call GetSGBLayout
-	call Intro_RotatePalettesLeftFrontpic
+	call RotateThreePalettesLeft
 
 	ld hl, wRivalName
-	ld de, .DefaultName
-
+	ld de, .Rival
 	call InitName
 	ret
 
-.DefaultName:
-	db "RED@"
-	ret
+.Rival:
+	db "RED@@@@@@@@"
+	
+;	db "RED@"
+;	ret
 
 NamePlayer:
 	farcall MovePlayerPicRight

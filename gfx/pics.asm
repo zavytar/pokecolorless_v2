@@ -411,7 +411,6 @@ KarenPic:            INCBIN "gfx/trainers/karen.2bpp.lz"
 NidorinaBackpic:     INCBIN "gfx/pokemon/nidorina/back.2bpp.lz"
 TentacruelBackpic:   INCBIN "gfx/pokemon/tentacruel/back.2bpp.lz"
 GrowlitheBackpic:    INCBIN "gfx/pokemon/growlithe/back.2bpp.lz"
-KogaPic:             INCBIN "gfx/trainers/koga.2bpp.lz"
 MachokeBackpic:      INCBIN "gfx/pokemon/machoke/back.2bpp.lz"
 RaichuBackpic:       INCBIN "gfx/pokemon/raichu/back.2bpp.lz"
 PoliwrathBackpic:    INCBIN "gfx/pokemon/poliwrath/back.2bpp.lz"
@@ -521,7 +520,6 @@ WillPic:             INCBIN "gfx/trainers/will.2bpp.lz"
 SchoolboyPic:        INCBIN "gfx/trainers/schoolboy.2bpp.lz"
 MagnemiteFrontpic:   INCBIN "gfx/pokemon/magnemite/front.animated.2bpp.lz"
 ErikaPic:            INCBIN "gfx/trainers/erika.2bpp.lz"
-JaninePic:           INCBIN "gfx/trainers/janine.2bpp.lz"
 MagnemiteBackpic:    INCBIN "gfx/pokemon/magnemite/back.2bpp.lz"
 
 
@@ -716,8 +714,8 @@ SECTION "Pics 19", ROMX
 ; Seems to be an accidental copy of the previous bank
 
 Rival1Pic:           INCBIN "gfx/trainers/rival1.2bpp.lz"
-INCBIN "gfx/pokemon/raikou/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_k/front.animated.2bpp.lz"
+KogaPic:             INCBIN "gfx/trainers/koga.2bpp.lz"
+JaninePic:           INCBIN "gfx/trainers/janine.2bpp.lz"
 INCBIN "gfx/pokemon/houndour/back.2bpp.lz"
 INCBIN "gfx/pokemon/poliwag/back.2bpp.lz"
 INCBIN "gfx/pokemon/squirtle/back.2bpp.lz"
