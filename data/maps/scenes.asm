@@ -25,4 +25,9 @@ MapScenes::
 	scene_var LANCES_ROOM,                  wLancesRoomSceneID
 	scene_var HALL_OF_FAME,                 wHallOfFameSceneID
 
+	scene_var OAKS_LAB, 	                wOaksLabSceneID
+	scene_var BLUES_HOUSE_1F,               wBluesHouse1FSceneID
+;	scene_var VIRIDIAN_CITY,                wViridianCitySceneID
+;	scene_var ROUTE_22_GATE,                wRoute22GateSceneID
+
 	db -1 ; end

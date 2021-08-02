@@ -2912,8 +2912,12 @@ wBrunosRoomSceneID::                db
 wKarensRoomSceneID::                db
 wLancesRoomSceneID::                db
 wHallOfFameSceneID::                db
+wOaksLabSceneID::					db
+wBluesHouse1FSceneID::				db
+wViridianCitySceneID::				db
+wRoute22GateSceneID::				db
 
-	ds 111
+	ds 107
 
 ; fight counts
 wJackFightCount::    db
