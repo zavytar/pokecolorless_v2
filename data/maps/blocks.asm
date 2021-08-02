@@ -25,19 +25,6 @@ BattleTowerHallway_Blocks:
 BattleTowerBattleRoom_Blocks:
 	INCBIN "maps/BattleTowerBattleRoom.blk"
 
-
-SECTION "Map Blocks 2", ROMX
-
-NewBarkTown_Blocks:
-	INCBIN "maps/NewBarkTown.blk"
-
-PlayersHouse1F_Blocks:
-	INCBIN "maps/PlayersHouse1F.blk"
-
-PlayersHouse2F_Blocks:
-	INCBIN "maps/PlayersHouse2F.blk"
-
-OaksLab_Blocks:
 	INCBIN "maps/OaksLab.blk"
 
 RedsHouse1F_Blocks:
@@ -51,6 +38,21 @@ BluesHouse1F_Blocks:
 
 PalletTown_Blocks:
 	INCBIN "maps/PalletTown.blk"
+
+
+
+SECTION "Map Blocks 2", ROMX
+
+NewBarkTown_Blocks:
+	INCBIN "maps/NewBarkTown.blk"
+
+PlayersHouse1F_Blocks:
+	INCBIN "maps/PlayersHouse1F.blk"
+
+PlayersHouse2F_Blocks:
+	INCBIN "maps/PlayersHouse2F.blk"
+
+OaksLab_Blocks:
 
 
 SECTION "Map Blocks 3", ROMX
