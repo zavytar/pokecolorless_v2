@@ -1,40 +1,17 @@
-RedsHouse2F_MapScripts:
-	db 0 ; scene scripts
+	object_const_def
 
-	db 0 ; callbacks
+Route5_MapScripts:
+	def_scene_scripts
 
-RedsHouse2FN64Script:
-	jumptext RedsHouse2FN64Text
+	def_callbacks
 
-RedsHouse2FPCScript:
-	jumptext RedsHouse2FPCText
-
-RedsHouse2FN64Text:
-	text "<PLAYER> played the"
-	line "N64."
-
-	para "Better get going--"
-	line "no time to lose!"
-	done
-
-RedsHouse2FPCText:
-	text "It's <RIVAL>'s PC."
-
-	para "I got better things"
-	line "to do than to snoop"
-	cont "around."
-	done
-
-RedsHouse2F_MapEvents:
+Route5_MapEvents:
 	db 0, 0 ; filler
 
-	db 1 ; warp events
-	warp_event  7,  0, REDS_HOUSE_1F, 3
+	def_warp_events
 
-	db 0 ; coord events
+	def_coord_events
 
-	db 2 ; bg events
-	bg_event  3,  5, BGEVENT_READ, RedsHouse2FN64Script
-	bg_event  0,  1, BGEVENT_READ, RedsHouse2FPCScript
+	def_bg_events
 
-	db 0 ; object events
+	def_object_events

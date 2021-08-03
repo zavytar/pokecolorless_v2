@@ -1,90 +1,17 @@
-	object_const_def ; object_event constants
-	const PALLETTOWN_TEACHER
-	const PALLETTOWN_FISHER
+	object_const_def
 
 PalletTown_MapScripts:
-	db 0 ; scene scripts
+	def_scene_scripts
 
-	db 1 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .FlyPoint
-
-.FlyPoint:
-	setflag ENGINE_FLYPOINT_PALLET
-	return
-
-PalletTownTeacherScript:
-	jumptextfaceplayer PalletTownTeacherText
-
-PalletTownFisherScript:
-	jumptextfaceplayer PalletTownFisherText
-
-PalletTownSign:
-	jumptext PalletTownSignText
-
-RedsHouseSign:
-	jumptext RedsHouseSignText
-
-OaksLabSign:
-	jumptext OaksLabSignText
-
-BluesHouseSign:
-	jumptext BluesHouseSignText
-
-PalletTownTeacherText:
-	text "I'm raising #-"
-	line "MON too."
-
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
-	done
-
-PalletTownFisherText:
-	text "Technology is"
-	line "incredible!"
-
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
-	done
-
-PalletTownSignText:
-	text "PALLET TOWN"
-
-	para "A Tranquil Setting"
-	line "of Peace & Purity"
-	done
-
-RedsHouseSignText:
-	text "<RIVAL>'S HOUSE"
-	done
-
-OaksLabSignText:
-	text "OAK #MON"
-	line "RESEARCH LAB"
-	done
-
-BluesHouseSignText:
-	text "<PLAYER>'S HOUSE"
-	done
+	def_callbacks
 
 PalletTown_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
-	warp_event  5,  5, REDS_HOUSE_1F, 1
-	warp_event 13,  5, BLUES_HOUSE_1F, 1
-	warp_event 12, 11, OAKS_LAB, 1
+	def_warp_events
 
-	db 0 ; coord events
+	def_coord_events
 
-	db 4 ; bg events
-	bg_event  7,  9, BGEVENT_READ, PalletTownSign
-	bg_event  3,  5, BGEVENT_READ, RedsHouseSign
-	bg_event 13, 13, BGEVENT_READ, OaksLabSign
-	bg_event 11,  5, BGEVENT_READ, BluesHouseSign
+	def_bg_events
 
-	db 2 ; object events
-	object_event  3,  8, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PalletTownTeacherScript, -1
-	object_event 12, 14, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PalletTownFisherScript, -1
+	def_object_events

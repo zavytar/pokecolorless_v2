@@ -1,11 +1,11 @@
 	object_const_def
 
-Route5_MapScripts:
+PokemonTower3F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-Route5_MapEvents:
+PokemonTower3F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
