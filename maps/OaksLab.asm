@@ -1,23 +1,22 @@
 	object_const_def ; object_event constants
 	const OAKSLAB_OAK
-	const OAKSLAB_SCIENTIST1
-	const OAKSLAB_SCIENTIST2
-	const OAKSLAB_SCIENTIST3
+;	const OAKSLAB_RED
+;	const OAKSLAB_SCIENTIST1
+;	const OAKSLAB_SCIENTIST2
+;	const OAKSLAB_SCIENTIST3
 	const OAKSLAB_POKEBALL
-	const OAKSLAB_POKEDEX1
-	const OAKSLAB_POKEDEX2
-	const OAKSLAB_RED
+;	const OAKSLAB_POKEDEX1
+;	const OAKSLAB_POKEDEX2
 
 OaksLab_MapScripts:
-	db 0 ; scene scripts
-;	scene_script .MeetOak 		; SCENE_OAKSLAB_INTRO
-;	scene_script .DummyScene1 ; SCENE_OAKSLAB_CANT_LEAVE
-;	scene_script .DummyScene2 ; SCENE_OAKSLAB_NOTHING
-;	scene_script .DummyScene3	; SCENE_OAKSLAB_POKEDEX
+	db 3 ; scene scripts
+	scene_script .MeetOak 		; SCENE_OAKSLAB_INTRO
+	scene_script .DummyScene1	; SCENE_OAKSLAB_CANT_LEAVE
+	scene_script .DummyScene2	; SCENE_OAKSLAB_NOTHING
 
 	db 0 ; callbacks
 
-;.MeetOak:
+.MeetOak:
 ;	special FadeOutPalettes
 ;	disappear OAKSLAB_OAK
 ;	disappear OAKSLAB_RED
@@ -25,30 +24,36 @@ OaksLab_MapScripts:
 ;	setevent EVENT_RED_OAKS_LAB
 ;	clearevent EVENT_VIRIDIAN_GRAMPS_GRUMPY
 ;	setevent EVENT_VIRIDIAN_GRAMPS_OKAY
-;	turnobject PLAYER, UP
-;	pause 20
+	turnobject PLAYER, UP
+	pause 20
 ;	special FadeInPalettes
-;	opentext
-;	writetext OaksLab_IntroText1
-;	waitbutton
-;	special NameRival
+	opentext
+	writetext OaksLab_IntroText1
+	waitbutton
 ;	writetext OaksLab_IntroText2
 ;	waitbutton
-;	closetext
-;	setscene SCENE_OAKSLAB_CANT_LEAVE
-;	end
+	closetext
+	setscene SCENE_OAKSLAB_CANT_LEAVE
+	end
 
 .DummyScene1:
 .DummyScene2:
-.DummyScene3:
 	end
 
-;OaksLab_GetDexScriptR:
-;	sjump OaksLab_GetDexScript
+OaksLab_EeveeBallScript:
+	opentext
+	writetext OaksLab_EeveeBallText
+	waitbutton
+	closetext
+	end 
 
-;OaksLab_GetDexScriptL:
-;OaksLab_GetDexScript:
-;	end
+OaksLab_CantLeaveScript:
+	opentext
+	writetext OaksLab_CantLeaveText
+	waitbutton
+	closetext
+	applymovement PLAYER, OaksLab_CantLeaveMovement
+	end 	
 
 OaksLab_IntroText1:
 	text "Heh! This is it!"
@@ -63,16 +68,16 @@ OaksLab_IntroText1:
 	line "here yet."
 
 	para "And it seems"
-	line "that loser isn't"
+	line "<RIVAL> isn't"
 	cont "here either…"
+	
+	para "Sigh…"
+
+	para "Guess all I can"
+	line "do is wait for"
+	cont "Gramps…"
 	done
 
-OaksLab_IntroText2:
-	text "Sigh… Guess it's"
-	line "waiting for me,"
-	cont "then! I hope he"
-	cont "gets back soon!"
-	done
 
 
 OaksLab_CantLeaveText:
@@ -373,11 +378,13 @@ OaksAssistant2Text:
 	done
 
 OaksAssistant3Text:
-	text "Don't tell anyone,"
-	line "but PROF.OAK'S"
+	text "PROF.OAK is the"
+	line "authority on"
+	cont "#MON!"
 
-	para "#MON TALK isn't"
-	line "a live broadcast."
+	para "Many #MON"
+	line "trainers hold him"
+	cont "in high regard!"
 	done
 
 OaksLabPoster1Text:
@@ -515,11 +522,9 @@ OaksLab_MapEvents:
 	warp_event  4, 11, PALLET_TOWN, 3
 	warp_event  5, 11, PALLET_TOWN, 3
 
-	db 0 ; coord events
-;	coord_event  4,  6, SCENE_OAKSLAB_CANT_LEAVE, OaksLab_TryToLeaveScript
-;	coord_event  5,  6, SCENE_OAKSLAB_CANT_LEAVE, OaksLab_TryToLeaveScript
-;	coord_event  4,  7, SCENE_OAKSLAB_POKEDEX, OaksLab_GetDexScriptL
-;	coord_event  5,  7, SCENE_OAKSLAB_POKEDEX, OaksLab_GetDexScriptR
+	db 2 ; coord events
+	coord_event  4,  6, SCENE_OAKSLAB_CANT_LEAVE, OaksLab_CantLeaveScript
+	coord_event  5,  6, SCENE_OAKSLAB_CANT_LEAVE, OaksLab_CantLeaveScript
 
 	db 16 ; bg events
 ;	bg_event  6,  1, BGEVENT_READ, OaksLabBookshelf
@@ -539,12 +544,12 @@ OaksLab_MapEvents:
 ;	bg_event  9,  3, BGEVENT_READ, OaksLabTrashcan
 ;	bg_event  0,  1, BGEVENT_READ, OaksLabPC
 
-	db 0 ; object events
-;	object_event  5,  2, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OakScript, EVENT_OAK_OUT ;
+	db 2 ; object events
+	object_event  5,  2, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OakScript, EVENT_OAK_OUT ;
+;	object_event  5,  3, SPRITE_SILVER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OaksLab_RedScript, EVENT_RED_OAKS_LAB ; Red
 ;	object_event  1,  8, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OaksAssistant1Script, -1
 ;	object_event  8,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OaksAssistant2Script, -1
 ;	object_event  2, 10, SPRITE_SCIENTIST, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OaksAssistant3Script, -1
-;	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OaksLab_EeveeBallScript, EVENT_GOT_EEVEE_FROM_OAK ;Ball w/ Eevee
+	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OaksLab_EeveeBallScript, EVENT_GOT_EEVEE_FROM_OAK ;Ball w/ Eevee
 ;	object_event  2,  1, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OaksLab_PokedexScript, -1 ;Dex1
 ;	object_event  3,  1, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OaksLab_PokedexScript, -1 ;Dex2
-;	object_event  5,  3, SPRITE_SILVER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OaksLab_RedScript, EVENT_RED_OAKS_LAB ; Red
