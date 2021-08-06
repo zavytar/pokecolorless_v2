@@ -135,7 +135,9 @@ ENDM
 	map_attributes PokemonTower2F, POKEMON_TOWER_2F $00, 0
 	map_attributes PokemonTower3F, POKEMON_TOWER_3F, $00, 0	
 	map_attributes PokemonTower4F, POKEMON_TOWER_4F, $00, 0
-	map_attributes PokemonTower5F, POKEMON_TOWER_5F, $00, 0
+	map_attributes PokemonTower5F, POKEMON_TOWER_5F, $00, 0	
+	map_attributes UndergroundPathNorthSouth, UNDERGROUND_PATH_NORTH_SOUTH, $00, 0
+	map_attributes UndergroundPathWestEast, UNDERGROUND_PATH_WEST_EAST, $00, 0
 	
 	map_attributes OaksLab, OAKS_LAB, $00, 0
 	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
@@ -151,37 +153,75 @@ ENDM
 	map_attributes ViridianPokecenter, VIRIDIAN_POKECENTER, $00, 0
 	map_attributes ViridianMart, VIRIDIAN_MART, $00, 0
 	map_attributes ViridianGym, VIRIDIAN_GYM, $00, 0
+	map_attributes ViridianSchool, VIRIDIAN_SCHOOL, $00, 0
+	map_attributes ViridianGym, VIRIDIAN_GYM, $00, 0
+	map_attributes ViridianHouse1, VIRIDIAN_HOUSE_1, $00, 0
+	map_attributes Route2Gate, ROUTE_2_GATE, $00, 0
+	map_attributes Route22Gate, ROUTE_22_GATE, $00, 0
+	map_attributes ViridianForestNorthGate, VIRIDIAN_FOREST_NORTH_GATE, $00, 0
+	map_attributes ViridianForestSouthGate, VIRIDIAN_FOREST_SOUTH_GATE, $00, 0
+	map_attributes Route2House1, ROUTE_2_HOUSE_1, $00, 0
 
 	map_attributes PewterCity, PEWTER_CITY, $00, 0
-	map_attributes PewtePokecenter, PEWTER_POKECENTER, $00, 0
-	map_attributes PewteMart, PEWTER_MART, $00, 0
-	map_attributes PewteGym, PEWTER_GYM, $00, 0
+	map_attributes PewterPokecenter, PEWTER_POKECENTER, $00, 0
+	map_attributes PewterMart, PEWTER_MART, $00, 0
+	map_attributes PewterGym, PEWTER_GYM, $00, 0
+	map_attributes PewterMuseum1F, PEWTER_MUSEUM_1F, $00, 0
+	map_attributes PewterMuseum2F, PEWTER_MUSEUM_2F, $00, 0
+	map_attributes PewterHouse1, PEWTER_HOUSE_1, $00, 0
+	map_attributes PewterHouse2, PEWTER_HOUSE_2, $00, 0
 	map_attributes Route3, ROUTE_3, $00, 0
+	map_attributes MountMoonOutside, MOUNT_MOON_OUTSIDE, $00, 0
+	map_attributes MountMoonPokecenter, MOUNT_MOON_POKECENTER, $00, 0
 
 	map_attributes Route4, ROUTE_4, $00, 0
 	map_attributes CeruleanCity, CERULEAN_CITY, $00, 0
 	map_attributes CeruleanPokecenter, CERULEAN_POKECENTER, $00, 0
 	map_attributes CeruleanMart, CERULEAN_MART, $00, 0
 	map_attributes CeruleanGym, CERULEAN_GYM, $00, 0
+	map_attributes BikeShop, BIKE_SHOP, $00, 0
+	map_attributes CeruleanHouse1, CERULEAN_HOUSE_1, $00, 0
+	map_attributes CeruleanHouse2, CERULEAN_HOUSE_2, $00, 0
+	map_attributes CeruleanHouse3, CERULEAN_HOUSE_3, $00, 0
+	map_attributes Route24, ROUTE_24, $00, 0
+	map_attributes Route25, ROUTE_25, $00, 0
+	map_attributes BillsHouse, BILLS_HOUSE, $00, 0
 	map_attributes Route5, ROUTE_5, $00, 0
+	map_attributes DayCare, DAY_CARE, $00, 0
+	map_attributes Route5UndergroundEntrance, ROUTE_5_UNDERGROUND_ENTRANCE, $00, 0
 	map_attributes Route9, ROUTE_9, $00, 0
 	map_attributes Route10North, ROUTE_10_NORTH, $00, 0
+	map_attributes Route10Pokecenter, ROUTE_10_POKECENTER, $00, 0
 
 	map_attributes Route6, ROUTE_6, $00, 0
+	map_attributes Route6UndergroundEntrance, ROUTE_6_UNDERGROUND_ENTRANCE, $00, 0
 	map_attributes VermillionCity, VERMILLION_CITY, $00, 0
 	map_attributes VermillionPokecenter, VERMILLION_POKECENTER, $00, 0
 	map_attributes VermillionMart, VERMILLION_MART, $00, 0
-	map_attributes VermillionGym, VERMILLION_GYM, $00, 0	
+	map_attributes VermillionGym, VERMILLION_GYM, $00, 0
+	map_attributes VermillionFishingGurusHouse, VERMILLION_FISHING_GURUS_HOUSE, $00, 0
+	map_attributes VermillionFanClub, VERMILLION_FAN_CLUB, $00, 0
+	map_attributes VermillionHouse1, VERMILLION_HOUSE_1, $00, 0
+	map_attributes VermillionHouse2, VERMILLION_HOUSE_2, $00, 0
 	map_attributes Route11, ROUTE_11, $00, 0
+	map_attributes Route11Gate1F, ROUTE_11_GATE_1F, $00, 0
+	map_attributes Route11Gate2F, ROUTE_11_GATE_2F, $00, 0
 
 	map_attributes Route10South, ROUTE_10_NORTH, $00, 0
 	map_attributes LavenderTown, LAVENDER_TOWN, $00, 0
 	map_attributes LavenderPokecenter, LAVENDER_POKECENTER, $00, 0
 	map_attributes LavenderMart, LAVENDER_MART, $00, 0
+	map_attributes MrFujisHouse, MR_FUJIS_HOUSE, $00, 0
+	map_attributes NameRatersHouse, NAME_RATERS_HOUSE, $00, 0
+	map_attributes LavenderHouse1, LAVENDER_HOUSE_1, $00, 0
 	map_attributes Route8, ROUTE_8, $00, 0
+	map_attributes Route8UndergroundEntrance, ROUTE_8_UNDERGROUND_ENTRANCE, $00, 0
 	map_attributes Route12, ROUTE_12, $00, 0
+	map_attributes Route12Gate1F, ROUTE_12_GATE_1F, $00, 0
+	map_attributes Route12Gate2F, ROUTE_12_GATE_2F, $00, 0
 
 	map_attributes Route7, ROUTE_7, $00, 0
+	map_attributes Route7UndergroundEntrance, ROUTE_7_UNDERGROUND_ENTRANCE, $00, 0
 	map_attributes CeladonCity, CELADON_CITY, $00, 0
 	map_attributes CeladonPokecenter, CELADON_POKECENTER, $00, 0
 	map_attributes CeladonDeptStore1F, CELADON_DEPT_STORE_1F, $00, 0
@@ -189,6 +229,33 @@ ENDM
 	map_attributes CeladonDeptStore3F, CELADON_DEPT_STORE_3F, $00, 0
 	map_attributes CeladonDeptStore4F, CELADON_DEPT_STORE_4F, $00, 0
 	map_attributes CeladonDeptStore5F, CELADON_DEPT_STORE_5F, $00, 0
-	map_attributes CeladonGym, CELADON_GYM, $00, 0	
+	map_attributes CeladonGym, CELADON_GYM, $00, 0
+	map_attributes CeladonGameCorner, CELADON_GAME_CORNER, $00, 0
+	map_attributes CeladonPrizeCorner, CELADON_PRIZE_CORNER, $00, 0
+	map_attributes CeladonMansion1F, CELADON_MANSION_1F, $00, 0
+	map_attributes CeladonMansion2F, CELADON_MANSION_2F, $00, 0
+	map_attributes CeladonMansion3F, CELADON_MANSION_3F, $00, 0
+	map_attributes CeladonMansion4F, CELADON_MANSION_4F, $00, 0
+	map_attributes CeladonMansionRoom, CELADON_MANSION_ROOM, $00, 0
+	map_attributes CeladonRestaurant, CELADON_RESTAURANT, $00, 0
+	map_attributes CeladonHotel, CELADON_HOTEL, $00, 0
+	map_attributes CeladonHouse1, CELADON_HOUSE_1, $00, 0
 	map_attributes Route16, ROUTE_16, $00, 0
+	map_attributes Route16Gate1F, ROUTE_16_GATE_1F, $00, 0
+	map_attributes Route16Gate2F, ROUTE_16_GATE_2F, $00, 0
+	map_attributes Route16House1, ROUTE_16_HOUSE_1, $00, 0
+
+	map_attributes SaffronNorthGate, SAFFRON_NORTH_GATE, $00, 0
+	map_attributes SaffronSouthGate, SAFFRON_SOUTH_GATE, $00, 0
+	map_attributes SaffronWestGate, SAFFRON_WEST_GATE, $00, 0
+	map_attributes SaffronEastGate, SAFFRON_EAST_GATE, $00, 0
+	map_attributes SaffronCity, SAFFRON_CITY, $00, 0
+	map_attributes SaffronPokecenter, SAFFRON_POKECENTER, $00, 0
+	map_attributes SaffronMart, SAFFRON_MART, $00, 0
+	map_attributes SaffronGym, SAFFRON_GYM, $00, 0
+	map_attributes FightingDojo, FIGHTING_DOJO, $00, 0
+	map_attributes MrPsychicsHouse, MR_PSYCHICS_HOUSE, $00, 0
+	map_attributes CopycatsHouse1F, COPYCATS_HOUSE_1F, $00, 0
+	map_attributes CopycatsHouse2F, COPYCATS_HOUSE_2F, $00, 0
+	map_attributes SaffronHouse1, SAFFRON_HOUSE_1, $00, 0
 
